@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python_kata"
+version = "0.1.0"
+description = "Kata for python"
+authors = ["Kacper Widuta <widuta.kacper@gmail.com>"]
+license = "GLWTS(NOLLM)"
+readme = "README.md"
+packages = [{include = "data_structures", from="src"}, {include = "algorithms", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.2.2"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+testpaths = [
+    "tests",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
