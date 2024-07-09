@@ -1,19 +1,19 @@
-import InOrderTraversal from "src/trees/BTInOrderTraversal";
 import { describe, expect, test } from "vitest";
 import { tree } from "./binary-tree";
+import PreOrderTraversal from "src/trees/preOrderTraversal";
 
-describe("Binary Tree In Order Traversal test suite", () => {
+describe("Binary Tree Pre Order Traversal test suite", () => {
     test("Should return path of the same order", () => {
-        expect(InOrderTraversal(tree)).toEqual([
+        expect(PreOrderTraversal(tree)).toEqual([
+            20,
+            10,
             5,
             7,
-            10,
             15,
-            20,
-            29,
-            30,
-            45,
             50,
+            30,
+            29,
+            45,
             100,
         ]);
     })
