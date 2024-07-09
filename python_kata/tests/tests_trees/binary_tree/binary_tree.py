@@ -1,0 +1,25 @@
+from trees.binary_tree.node import BinaryNode
+
+tree: BinaryNode[int] = BinaryNode(20)
+tree.right = BinaryNode(50)
+tree.right.right = BinaryNode(100)
+tree.right.left = BinaryNode(30)
+tree.right.left.right = BinaryNode(45)
+tree.right.left.left = BinaryNode(29)
+tree.left = BinaryNode(10)
+tree.left.right = BinaryNode(15)
+tree.left.left = BinaryNode(5)
+tree.left.left.right = BinaryNode(7)
+
+
+tree2: BinaryNode[int] = BinaryNode(20)
+tree2.right = BinaryNode(50)
+tree2.right.left = BinaryNode(30)
+tree2.right.left.right = BinaryNode(45)
+tree2.right.left.right.right = BinaryNode(49)
+tree2.right.left.left = BinaryNode(29)
+tree2.right.left.left.left = BinaryNode(21)
+tree2.left = BinaryNode(10)
+tree2.left.right = BinaryNode(15)
+tree2.left.left = BinaryNode(5)
+tree2.left.left.right = BinaryNode(7)

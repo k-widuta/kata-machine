@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 import { tree } from "./binary-tree";
-import PostOrderTraversal from "src/trees/BTPostOrderTraversal";
+import PostOrderTraversal from "src/trees/postOrderTraversal";
 
 describe("Binary Tree Pre Order Traversal test suite", () => {
     test("Should return path of the same order", () => {

@@ -1,21 +1,21 @@
-import { BinaryNode } from "./BTnode";
+import { BinaryNode } from "./node";
 
 function walk(curr: BinaryNode<number> | undefined, path: number[]): number[] {
-    if (curr == undefined) {
+    if (!curr) {
         return path
     }
-    // Pre
-    path.push(curr.val)
 
+    // Pre
+    //
     // Recursive
     walk(curr.left, path)
     walk(curr.right, path)
 
     // Post
+    path.push(curr.val)
     return path
-
 }
 
-export default function PreOrderTraversal(head: BinaryNode<number>): number[] {
+export default function PostOrderTraversal(head: BinaryNode<number>): number[] {
     return walk(head, [])
 }
