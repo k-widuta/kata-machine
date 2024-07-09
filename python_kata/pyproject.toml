@@ -5,7 +5,8 @@ description = "Kata for python"
 authors = ["Kacper Widuta <widuta.kacper@gmail.com>"]
 license = "GLWTS(NOLLM)"
 readme = "README.md"
-packages = [{include = "data_structures", from="src"}, {include = "algorithms", from="src"}]
+packages = [{include = "data_structures", from="src"}, {include = "algorithms", from="src"}, 
+{include = "binary_tree", from="src/trees"}, {include = "recursion", from="src"}]
 
 [tool.poetry.dependencies]
 python = "^3.12"
