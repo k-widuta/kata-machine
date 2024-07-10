@@ -15,12 +15,12 @@ func newBinaryNode[T any](value T) *BinaryNode[T] {
 }
 
 type BinaryTree[T any] struct {
-	Head *BinaryNode[T]
+	Root *BinaryNode[T]
 }
 
 func newBinaryTree[T any](head *BinaryNode[T]) *BinaryTree[T] {
 	return &BinaryTree[T]{
-		Head: head,
+		Root: head,
 	}
 }
 
@@ -28,14 +28,14 @@ func CreateBinaryTree() *BinaryTree[int] {
 	head := newBinaryNode(69)
 	tree := newBinaryTree(head)
 
-	tree.Head.Left = newBinaryNode(420)
-	tree.Head.Right = newBinaryNode(97)
+	tree.Root.Left = newBinaryNode(420)
+	tree.Root.Right = newBinaryNode(97)
 
-	tree.Head.Left.Left = newBinaryNode(44)
-	tree.Head.Left.Right = newBinaryNode(2)
+	tree.Root.Left.Left = newBinaryNode(44)
+	tree.Root.Left.Right = newBinaryNode(2)
 
-	tree.Head.Right.Left = newBinaryNode(100)
-	tree.Head.Right.Right = newBinaryNode(7)
+	tree.Root.Right.Left = newBinaryNode(100)
+	tree.Root.Right.Right = newBinaryNode(7)
 
 	return tree
 }

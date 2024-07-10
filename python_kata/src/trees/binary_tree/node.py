@@ -12,3 +12,9 @@ class BinaryNode[T]:
     def __init__(self, value: T):
         self.val = value
         self.left = self.right = None
+
+class BinaryTree[T]:
+    root: BinaryNode[T]
+
+    def __init__(self, root: BinaryNode[T]):
+        self.root = root
