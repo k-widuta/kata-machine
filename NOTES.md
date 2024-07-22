@@ -21,6 +21,9 @@ slice[0] = 69
 - **Depth-first search** preserves tree shape, while breadth-first search does not.
 
 ### Binary search tree
+> On the left everything is smaller (or equal) to value
+
+> On the right everything is greater to value
 - if we insert a lot - use red-black algorithms
 - if we find a lot - use AVL algorithms because tree will be almost perfectly balanced but insertions will be slow
 - in-order traversal produces in-order array
