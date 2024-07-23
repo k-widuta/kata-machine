@@ -42,3 +42,8 @@ The simplest way to put it is a binary tree where every child and grand child is
 - get the left child - `2i + 1` 
 - get the right child - `2i + 2` 
 - get the parent - `(i- 1) / 2` (remember that we use normal language and 5 / 2 == 2, not 2.5)
+
+## Trie
+> They are pronounced like Tree (its named after Re"trie"val Tree). So its a Trie tree (but people keep calling them try trees / prefix / digital tree)!
+
+- The easiest way to visualize a trie is to think of auto-complete
