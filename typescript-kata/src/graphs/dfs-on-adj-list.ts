@@ -1,6 +1,6 @@
-import { WeightedAdjacencyList } from "./graph";
+import { WeightedAdjacencyListGraph } from "./graph";
 
-function walk(graph: WeightedAdjacencyList, curr: number, needle: number, seen: boolean[], path: number[]): boolean {
+function walk(graph: WeightedAdjacencyListGraph, curr: number, needle: number, seen: boolean[], path: number[]): boolean {
 
     if (seen[curr]) {
         return false;
@@ -27,7 +27,7 @@ function walk(graph: WeightedAdjacencyList, curr: number, needle: number, seen: 
     return false;
 }
 
-export function DFS(graph: WeightedAdjacencyList, source: number, needle: number): number[] | null {
+export function DFS(graph: WeightedAdjacencyListGraph, source: number, needle: number): number[] | null {
     const seen: boolean[] = new Array(graph.length).fill(false);
     const path: number[] = [];
 
