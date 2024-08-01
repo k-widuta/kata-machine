@@ -1,12 +1,12 @@
 export type CompleteGraphEdge = { from: number; to: number; weight: number };
 export type GraphEdge = { to: number; weight: number };
-export type WeightedAdjacencyList = GraphEdge[][];
+export type WeightedAdjacencyListGraph = GraphEdge[][];
 export type WeightedAdjacencyMatrix = number[][]; // A number means weight
 
-export type AdjacencyList = number[][];
+export type AdjacencyListGraph = number[][];
 export type AdjacencyMatrix = number[][]; // A 1 means connected
 
-export const list1: WeightedAdjacencyList = [];
+export const list1: WeightedAdjacencyListGraph = [];
 
 //      (1) --- (4) ---- (5)
 //    /  |       |       /|
@@ -47,7 +47,7 @@ list1[6] = [
     { to: 5, weight: 1 },
 ];
 
-export const list2: WeightedAdjacencyList = [];
+export const list2: WeightedAdjacencyListGraph = [];
 
 //     >(1)<--->(4) ---->(5)
 //    /          |       /|

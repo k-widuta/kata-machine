@@ -8,6 +8,8 @@ def qs(arr: List[int], lo: int, hi: int) -> None:
     pivotIndx = partition(arr, lo, hi)
 
     ## Recursion
+    # It's inclusive ending (not exlusive like in many other algos)
+    # So we subtract 1 here to make life easier
     qs(arr, lo, pivotIndx - 1)
     qs(arr, pivotIndx + 1, hi)
 
