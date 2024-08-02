@@ -1,4 +1,4 @@
-import { WeightedAdjacencyList } from "./graph";
+import { WeightedAdjacencyListGraph } from "./graph";
 
 function hasUnvisited(seen: boolean[], dists: number[]): boolean {
     return seen.some((s, i) => !s && dists[i] < Infinity);
@@ -22,7 +22,7 @@ function getLowestUnvisited(seen: boolean[], dists: number[]): number {
     return idx;
 }
 
-export function DijkstraAdjList(source: number, sink: number, graph: WeightedAdjacencyList): number[] {
+export function DijkstraAdjList(source: number, sink: number, graph: WeightedAdjacencyListGraph): number[] {
 
     const seen = new Array(graph.length).fill(false);
     const dists = new Array(graph.length).fill(Infinity);
