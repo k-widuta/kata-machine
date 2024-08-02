@@ -14,3 +14,7 @@ slice := []int{}
 // It will throw error
 slice[0] = 69
 ```
+
+## Javascript: cannot use negative indexes in array
+> Remember that we cannot use negative indexes in arrays. You implemented it!
+- we can use `arr.at(-1)` to use negative indexes
