@@ -10,7 +10,7 @@ Problems need to have two properties in order to be improved using dynamic progr
 2. An optimal substructure
 
 ## OVERLAPPING SUBPROBLEMS
-[IMAGE]
+<img width="667" alt="Screenshot 2024-08-05 at 08 13 07" src="https://github.com/user-attachments/assets/c664e487-90ea-495c-a649-a4ca6a923b9a">
 
 The core concept behind dynamic programming is to divide a problem into sub-problems and save the result for the future so that we will not have to compute that same problem again. Assuming there are some subproblems that repeat, we can save a lot of time by using the cached result.
 
@@ -19,7 +19,7 @@ If the optimal solution of the given problem can be obtained by using optimal so
 
 For example, the Bellman-Ford algorithm that we covered in the last module is actually a dynamic programming algorithm! The shortest-path problem has the optimal substructure trait.
 
-[IMAGE]
+<img width="684" alt="Screenshot 2024-08-05 at 08 16 13" src="https://github.com/user-attachments/assets/4c7accb3-9738-4e93-b306-5746ca09161c">
 
 In the graph above, let's assume we only knew the following 3 things:
 
