@@ -5,8 +5,8 @@
 
 ### LOCAL MAXIMUMS
 Greedy algorithms are bad when the solution space has many local maximums:
-[IMAGE FROM BOOTDEV]
+<img width="348" alt="Screenshot 2024-08-04 at 10 12 37" src="https://github.com/user-attachments/assets/4c5ee9fc-fbf0-418f-a1b4-34876cd1ba6b">
 
 ### NO LOCAL MAXIMUMS
 Greedy algorithms are great when the local maximum is the global maximum
-[IMAGE FROM BOOTDEV]
+<img width="308" alt="Screenshot 2024-08-04 at 10 12 46" src="https://github.com/user-attachments/assets/e62b2180-db1f-4d01-ba30-14252f8ecd04">
