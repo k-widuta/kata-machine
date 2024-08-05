@@ -1,5 +1,9 @@
-# Heap
+# Heap / Priority Queue
 > The simplest way to put it is a binary tree where every child and grand child is smaller (MaxHeap), or larger (MinHeap) than the current node.
+
+> Priority queues can have `insert` and `pop` methods that are `Big O(log(n))`. These kinds of fast priority queues can speed up algorithms like Dijkstra's.
+
+### Most times we store a tuple `[priority, value]`
 
 • Whenever a node is added, we must adjust the tree
 • Whenever a node is deleted, we must adjust the tree
